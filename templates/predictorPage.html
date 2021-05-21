@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h2 style="text-align: center;">VS Diabetes Predictor</h2>
+
+    <form class="form form-vertical" action="" method="post">
+        {{ form.csrf_token }}
+        {{form.pregnancies.label}}{{form.pregnancies}}<br>
+        {{form.glucose.label}}{{form.glucose}}<br>
+        {{form.bp.label}}{{form.bp}}<br>
+        {{form.st.label}}{{form.st}}<br>
+        {{form.insulin.label}}{{form.insulin}}<br>
+        {{form.bmi.label}}{{form.bmi}}<br>
+        {{form.age.label}}{{form.age}}<br>
+        {{form.submit}}
+    </form>
+</body>
+</html>
