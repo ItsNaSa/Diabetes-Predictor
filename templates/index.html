@@ -5,21 +5,18 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Diabetes Predictor Home</title>
+    <style>body{background-image: url("./../static/diabetes-bg.jpg");}</style>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <link rel="stylesheet" href="./../static/style.css">
 </head>
 <body>
-    <h1>Welcome to VS Diabetes Predictor!</h1>
-    <!-- <form action="" method="post">
-        <label for="pregnancies">Number of times pregnant</label><input type="number" name="pregnancies" id="pregnancies"><br>
-        <label for="glucose">Glucose level (in mg/dl)</label><input type="number" name="glucose" id="glucose"><br>
-        <label for="bp">Blood pressure</label><input type="number" name="bp" id="bp"><br>
-        <label for="st">Skin thickness</label><input type="number" name="st" id="st"><br>
-        <label for="insulin">Skin thickness</label><input type="number" name="insulin" id="insulin"><br>
-        <label for="bmi">Your BMI</label><input type="number" name="bmi" id="bmi"><br>
-        <label for="age">Your age</label><input type="number" name="age" id="age"><br>
-        <input type="submit">
-    </form> -->
-    <h2>Some values and diagrams</h2>
-    <form action="/predictor" method="GET"><button type="submit">Take me to the predictor!</button></form>
-    
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+        <h1 class="display-4 text-center" style="padding-top: 30px;">Welcome to VS Diabetes Predictor!</h1>
+        <div class="row text-center" style="padding: 30px;">
+            <div class="col-md-12"><a href="/predictor"><button class="btn customBtn">Take me to the predictor!</button></a> </div>
+        </div>
+        
 </body>
 </html>
