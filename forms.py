@@ -8,5 +8,6 @@ class diabetesdataform(FlaskForm):
     st = IntegerField("Your Skin Thickness", [validators.Required("Enter the skin thickness")])
     insulin = IntegerField("Insulin", [validators.Required("Enter insulin level")])
     bmi = DecimalField("BMI", [validators.Required("Enter your BMI")])
+    diabetesPedigree = DecimalField("Diabetes Pedigree function", [validators.Required("Enter the Diabetes pedigree function")])
     age = IntegerField("Age", [validators.Required("Enter your age")])
     

@@ -72,6 +72,16 @@
                 <div class="row mb-3">
                     <div class="col-md-2 col-sm-2"></div>
                     <div class="col-md-4 col-sm-4">
+                        {{form.diabetesPedigree.label}}
+                    </div>
+                    <div class="col-md-4 col-sm-4">
+                        {{form.diabetesPedigree}}
+                    </div>
+                    <div class="col-md-2 col-sm-2"></div>
+                </div>
+                <div class="row mb-3">
+                    <div class="col-md-2 col-sm-2"></div>
+                    <div class="col-md-4 col-sm-4">
                         {{form.bmi.label}}
                     </div>
                     <div class="col-md-4 col-sm-4">
@@ -89,12 +99,19 @@
                     </div>
                     <div class="col-md-2 col-sm-2"></div>
                 </div>
+
                 <div class="row mb-3">
                     <div class="col-md-12 text-center">
                         <button type="submit" class="btn customBtn">Submit</button>
                     </div>
                 </div>    
-                
+                <div class="row">
+                    <div class="col-md-12 text-center">
+                        <p>
+                            {{result}}
+                        </p>
+                    </div>
+                </div>
             </form>      
         </div>
     </body>
