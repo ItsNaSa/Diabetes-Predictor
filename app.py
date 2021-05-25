@@ -20,7 +20,7 @@ app.config.update(dict(
     WTF_CSRF_SECRET_KEY="3062657BB8605C5BF791641664B38721F27CAC21"
 ))
 
-@app.route('/')
+@app.route('/', methods=["GET", "POST"])
 def index():
     return redirect(url_for('home'))
 
