@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Diabetes Predictor</title>
+    <style>body{background-image: url("./../static/diabetes-bg.jpg");}</style>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <link rel="stylesheet" href="./../static/style.css">
+</head>
+<body>
+    <body>
+        <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+
+        <h4 class=" display-4 text-center" style="margin-top: 30px; margin-bottom: 30px;">Enter your values for prediction here!</h4>
+        <div class="container">
+            <form class="mb-3 pt-3 text-center f1" action="" method="post">
+                {{ form.csrf_token }}
+                <div class="row mb-3" style="padding-top: 20px;">
+                    <div class="col-md-2 col-sm-2"></div>
+                    <div class="col-md-4 col-sm-4 font-weight-bold">
+                        {{form.pregnancies.label}}
+                    </div>
+                    <div class="col-md-4 col-sm-4">
+                        {{form.pregnancies}}
+                    </div>
+                    <div class="col-md-2 col-sm-2"></div>
+                </div>
+                <div class="row mb-3">
+                    <div class="col-md-2 col-sm-2"></div>
+                    <div class="col-md-4 col-sm-4 font-weight-bold">
+                        {{form.glucose.label}}
+                    </div>
+                    <div class="col-md-4 col-sm-4">
+                        {{form.glucose}}
+                    </div>
+                    <div class="col-md-2 col-sm-2"></div>
+                </div>
+                <div class="row mb-3">
+                    <div class="col-md-2 col-sm-2"></div>
+                    <div class="col-md-4 col-sm-4 font-weight-bold">
+                        {{form.bp.label}}
+                    </div>
+                    <div class="col-md-4 col-sm-4">
+                        {{form.bp}}
+                    </div>
+                    <div class="col-md-2 col-sm-2"></div>
+                </div>
+                <div class="row mb-3">
+                    <div class="col-md-2 col-sm-2"></div>
+                    <div class="col-md-4 col-sm-4 font-weight-bold">
+                        {{form.st.label}}
+                    </div>
+                    <div class="col-md-4 col-sm-4">
+                        {{form.st}}
+                    </div>
+                    <div class="col-md-2 col-sm-2"></div>
+                </div>
+                <div class="row mb-3">
+                    <div class="col-md-2 col-sm-2"></div>
+                    <div class="col-md-4 col-sm-4 font-weight-bold">
+                        {{form.insulin.label}}
+                    </div>
+                    <div class="col-md-4 col-sm-4">
+                        {{form.insulin}}
+                    </div>
+                    <div class="col-md-2"></div>
+                </div>
+                <div class="row mb-3">
+                    <div class="col-md-2 col-sm-2"></div>
+                    <div class="col-md-4 col-sm-4 font-weight-bold">
+                        {{form.diabetesPedigree.label}}
+                    </div>
+                    <div class="col-md-4 col-sm-4">
+                        {{form.diabetesPedigree}}
+                    </div>
+                    <div class="col-md-2 col-sm-2"></div>
+                </div>
+                <div class="row mb-3">
+                    <div class="col-md-2 col-sm-2"></div>
+                    <div class="col-md-4 col-sm-4 font-weight-bold">
+                        {{form.bmi.label}}
+                    </div>
+                    <div class="col-md-4 col-sm-4">
+                        {{form.bmi}}
+                    </div>
+                    <div class="col-md-2 col-sm-2"></div>
+                </div>
+                <div class="row mb-3">
+                    <div class="col-md-2 col-sm-2"></div>
+                    <div class="col-md-4 col-sm-4 font-weight-bold">
+                        {{form.age.label}}
+                    </div>
+                    <div class="col-md-4 col-sm-4">
+                        {{form.age}}
+                    </div>
+                    <div class="col-md-2 col-sm-2"></div>
+                </div>
+
+                <div class="row mb-3">
+                    <div class="col-md-12 text-center">
+                        <button type="submit" class="btn customBtn">Submit</button>
+                    </div>
+                </div>    
+                <div class="row">
+                    <div class="col-md-12 text-center display-4">
+                        <p class="font-weight-bold" style="color: red;font-family:verdana;">
+                            {{result}}
+                        </p>
+                    </div>
+                </div>
+            </form>      
+        </div>
+        <div class="container">
+            <div class="row">
+                <div class="col-md-12 col-sm-12 text-center">
+                    <form action="/" method="post">
+                        <button type="submit" class="btn btn-danger">Go back to home page!</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+        
+    </body>
+    <div class="text-center" style="padding-top: 75px;">
+        Made with <svg viewBox="0 0 1792 1792" preserveAspectRatio="xMidYMid meet" xmlns="http://www.w3.org/2000/svg" style="height: 0.8rem;"><path d="M896 1664q-26 0-44-18l-624-602q-10-8-27.5-26T145 952.5 77 855 23.5 734 0 596q0-220 127-344t351-124q62 0 126.5 21.5t120 58T820 276t76 68q36-36 76-68t95.5-68.5 120-58T1314 128q224 0 351 124t127 344q0 221-229 450l-623 600q-18 18-44 18z" fill="#e25555"></path></svg> by Vedant and Sahil!
+    </div> 
+</body>
+</html>
