@@ -13,7 +13,7 @@
     <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
         <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
         <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
-        <h1 class="display-4 text-center" style="padding-top: 30px;">Welcome to VS Diabetes Predictor!</h1>
+        <h1 class="display-4 text-center" style="padding-top: 30px;">Welcome to Diabetes Predictor!</h1>
         <div class="row text-center" style="padding: 30px;">
             <div class="col-md-12"><a href="/predictor"><button class="btn customBtn">Take me to the predictor!</button></a> </div>
         </div>
@@ -32,16 +32,20 @@
         <div style="margin-top: 50px;">
             <h4 class="text-center">Head down for insights into the diabetes in Indians</h4>
         </div>
-        <div class="row">
-            <div class="col-md-6 col-sm-12">
-                <img class="figure-img img-fluid rounded" src="./../static/distplot.png" alt="Exploration of our dataset">
-                <figcaption class="figure-caption">Relative count of each type in dataset.</figcaption>
-                <p>The relative count of each heads in the dataset.</p>
-            </div>
-            <div class="col-md-6 col-sm-12">
-                <img class="figure-img img-fluid rounded" src="./../static/insulin_vs_pregnancies.png" alt="Insulin vs Pregnancies over outcome of diabetes">
-                <figcaption class="figure-caption">Insulin level and pregnancies dependence on diabetes. </figcaption>
-                <p>As we can see here, higher level of insulin for any number of pregnancies generally indicate the diabetes.(0 (blue) is non-diabetic and 1 (orange) is diabetic).</p>
+        <div class="container">
+            <div class="row">
+                <div class="col-md-1"></div>
+                <div class="col-md-5 col-sm-12">
+                    <img class="figure-img img-fluid rounded" src="./../static/distplot.png" alt="Exploration of our dataset">
+                    <figcaption class="figure-caption">Relative count of each type in dataset.</figcaption>
+                    <p>The relative count of each heads in the dataset.</p>
+                </div>
+                <div class="col-md-5 col-sm-12">
+                    <img class="figure-img img-fluid rounded" src="./../static/insulin_vs_pregnancies.png" alt="Insulin vs Pregnancies over outcome of diabetes">
+                    <figcaption class="figure-caption">Insulin level and pregnancies dependence on diabetes. </figcaption>
+                    <p>As we can see here, higher level of insulin for any number of pregnancies generally indicate the diabetes.(0 (blue) is non-diabetic and 1 (orange) is diabetic).</p>
+                </div>
+                <div class="col-md-1"></div>
             </div>
         </div>
         <div class="text-center">
