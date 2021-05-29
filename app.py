@@ -70,7 +70,7 @@ def predictor():
         print("Value = {}".format(value))
         # Logic to predict and redirect to the predicted value display
         if value == 0:
-            string = "Congratulations!! There is a 83% chance you are NOT a diabetic!"
+            string = "Congratulations!! You are NOT a diabetic!"
         elif value == 1:
-            string = "There is a 83% chance you are a diabetic! Kindly consult a physician!"
+            string = "You are a diabetic! Kindly consult a physician!"
     return render_template('predictorPage.html', form=form, result=string)
