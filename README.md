@@ -36,10 +36,10 @@
 ## Screenshots
 
 1. *Home Page*
-![Home Page](./Assets/HomePage.png)  
+![Home Page](./Assets/HomePage.png?raw=true)  
 
 2. *Prediction*
-![Prediction](./Assets/Prediction.png)
+![Prediction](./Assets/Prediction.png?raw=true)
 
 ---
 
