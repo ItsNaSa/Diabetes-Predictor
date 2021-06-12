@@ -36,10 +36,10 @@
 ## Screenshots
 
 1. *Home Page*
-![Home Page](./Assets/HomePage.png?raw=true)  
+![Home Page](https://github.com/ItsNaSa/Diabetes-Predictor/blob/main/Assets/HomePage.PNG)  
 
 2. *Prediction*
-![Prediction](./Assets/Prediction.png?raw=true)
+![Prediction](https://github.com/ItsNaSa/Diabetes-Predictor/blob/main/Assets/Prediction.PNG)
 
 ---
 
