@@ -56,5 +56,5 @@ We selected the random forest model which gave us an accuracy of 83.12%. The jup
 
 ### Creators
 
-[Vedant Purnaik](https://github.com/VedantKP)  
+[Vedant Puranik](https://github.com/VedantKP)  
 [Sahil Naphade](https://github.com/ItsNaSa)
